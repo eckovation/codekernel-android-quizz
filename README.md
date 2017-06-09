@@ -1,6 +1,6 @@
 # codekernel-android-quizz
 
-##Manually add Firebase
+## Manually add Firebase
 
 To add Firebase to your app you'll need a Firebase project and a Firebase configuration file for your app.
 
