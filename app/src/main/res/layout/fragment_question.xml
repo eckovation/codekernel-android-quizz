@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen_16x"
+    tools:context="com.eckovation.course.quizz.fragments.QuestionActivityFragment">
+
+    <TextView
+        android:id="@+id/question_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@color/question_text_yellow"
+        android:textSize="@dimen/text_dimen_large"
+        android:textStyle="bold"
+        tools:text="What is the name of this actor?" />
+
+    <ImageView
+        android:id="@+id/question_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question_text"
+        android:layout_marginTop="@dimen/dimen_16x"
+        android:scaleType="centerInside"
+        tools:src="@drawable/background_slant" />
+
+    <Button
+        android:id="@+id/question_answer_button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question_image"
+        android:layout_marginTop="@dimen/dimen_16x"
+        android:background="@drawable/button_answer_selectable"
+        android:textColor="@color/dark_grey"
+        android:textStyle="bold"
+        tools:text="Brad Pitt" />
+
+    <Button
+        android:id="@+id/question_answer_button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question_answer_button1"
+        android:layout_marginTop="@dimen/dimen_16x"
+        android:background="@drawable/button_answer_selectable"
+        android:textColor="@color/dark_grey"
+        android:textStyle="bold"
+        tools:text="Christian Bale" />
+
+    <Button
+        android:id="@+id/question_answer_button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question_answer_button2"
+        android:layout_marginTop="@dimen/dimen_16x"
+        android:background="@drawable/button_answer_selectable"
+        android:textColor="@color/dark_grey"
+        android:textStyle="bold"
+        tools:text="Matt Damon" />
+
+    <Button
+        android:id="@+id/question_answer_button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question_answer_button3"
+        android:layout_marginTop="@dimen/dimen_16x"
+        android:background="@drawable/button_answer_selectable"
+        android:textColor="@color/dark_grey"
+        android:textStyle="bold"
+        tools:text="Johny Depp" />
+</RelativeLayout>

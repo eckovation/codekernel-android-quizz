@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Quizz</string>
+    <string name="login_name">Name</string>
+    <string name="login_email">Email</string>
+    <string name="login_password">Password</string>
+    <string name="login_forgot_password">Forgot Password?</string>
+    <string name="login_button_submit">Log In</string>
+    <string name="signup_button_submit">Sign Up</string>
+    <string name="login_button_signup">Not a Member? Sign Up</string>
+    <string name="content_desc_login_trophy_image">Login to quizz</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_search">Search</string>
+    <string name="popular_topics_tab_title">Popular Topics</string>
+    <string name="all_topics_tab_title">All Topics</string>
+    <string name="button_play_now">Play Now</string>
+    <string name="button_challenge">Challenge</string>
+    <string name="button_ranking">Ranking</string>
+    <string name="button_discussion">Discussion</string>
+    <string name="title_activity_question">Questions</string>
+    <string name="email_validation_error">Enter correct email</string>
+    <string name="password_validation_error">Password cannot be empty</string>
+    <string name="name_validation_error">Name cannot be empty</string>
+
+    <string name="question_no">Question\n%1$d/%2$d</string>
+    <string name="time_left">Time Left</string>
+    <string name="countdown_dummy">30</string>
+    <string name="your_score_static_text">Your Score</string>
+
+</resources>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_16x"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_16x"
+        android:layout_marginLeft="@dimen/dimen_16x"
+        android:layout_marginRight="@dimen/dimen_16x"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="false">
+
+        <RelativeLayout
+            android:id="@+id/layout_topic_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dimen_32x"
+            android:paddingTop="@dimen/dimen_32x">
+
+            <ImageView
+                android:id="@+id/imageView_topic_item"
+                android:layout_width="@dimen/dimen_64x"
+                android:layout_height="@dimen/dimen_64x"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="@dimen/dimen_32x"
+                android:layout_marginRight="@dimen/dimen_32x"
+                android:contentDescription="@string/all_topics_tab_title"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/ic_trophy" />
+
+            <TextView
+                android:id="@+id/textView_topic_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_16x"
+                android:layout_marginStart="@dimen/dimen_16x"
+                android:layout_toLeftOf="@id/imageView_topic_item"
+                android:layout_toStartOf="@id/imageView_topic_item"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_dimen_huge"
+                android:textStyle="bold"
+                tools:text="Topic" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/expanded_view_topics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_16x"
+        android:layout_marginRight="@dimen/dimen_16x"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_32x">
+
+            <View
+                android:id="@+id/expanded_center"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerInParent="true" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/image_button_play_now"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/dimen_8x"
+                android:layout_toLeftOf="@id/expanded_center"
+                android:layout_toStartOf="@id/expanded_center"
+                android:background="@drawable/button_background_pink"
+                android:text="@string/button_play_now" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/image_button_challenge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/dimen_8x"
+                android:layout_toEndOf="@id/expanded_center"
+                android:layout_toRightOf="@id/expanded_center"
+                android:background="@drawable/button_background_blue"
+                android:text="@string/button_challenge" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/image_button_ranking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_button_play_now"
+                android:layout_margin="@dimen/dimen_8x"
+                android:layout_toLeftOf="@id/expanded_center"
+                android:layout_toStartOf="@id/expanded_center"
+                android:background="@drawable/button_background_green"
+                android:text="@string/button_ranking" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/image_button_discussion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_button_challenge"
+                android:layout_margin="@dimen/dimen_8x"
+                android:layout_toEndOf="@id/expanded_center"
+                android:layout_toRightOf="@id/expanded_center"
+                android:background="@drawable/button_background_yellow"
+                android:text="@string/button_discussion" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

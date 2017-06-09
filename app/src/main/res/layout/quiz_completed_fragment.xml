@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/text_marks_scored"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/circle_white"
+        android:gravity="center"
+        android:textColor="@color/question_text_yellow"
+        android:textSize="@dimen/text_dimen_single_extra_huge" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/text_marks_scored"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_32x"
+        android:text="@string/your_score_static_text"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_dimen_huge"
+        android:textStyle="bold" />
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/go_to_home_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_marks_scored"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_32x"
+        android:text="Home"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/question_text_yellow" />
+
+</RelativeLayout>
